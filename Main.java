@@ -36,7 +36,7 @@ public class Main {
             System.out.println(" ║ [2] EXIT                                                                   ║");
             System.out.println(" ║                                                                            ║");
             System.out.println(" ╚════════════════════════════════════════════════════════════════════════════╝");
-            System.out.print("                                Escolha uma opção: ");
+            System.out.println("                               Escolha uma opção:                              ");
 
             int opcao = scanner.nextInt();
             scanner.nextLine(); // Consumir o newline após o número
