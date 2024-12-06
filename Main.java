@@ -7,17 +7,28 @@ public class Main {
         boolean running = true;
 
         while (running) {
-            // Limpar a tela a cada loop
             Utils.limparTela(); // Chama o método da classe Utils
-
-            System.out.println();
-            System.out.println(" ██████╗ ██╗   ██╗███╗   ██╗ ██████╗ ███████╗ ██████╗ ████████╗ ██████╗");
-            System.out.println("██╔══██╗██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔══██╗");
-            System.out.println("██████╔╝██║   ██║██╔██╗ ██║██████╔╝█████╗  ██████╔╝   ██║   ██████╔╝");
-            System.out.println("██╔═══╝ ██║   ██║██║╚██╗██║██╔══██╗██╔══╝  ██╔══██╗   ██║   ██╔══██╗");
-            System.out.println("██║     ╚██████╔╝██║ ╚████║██║  ██║███████╗██████╔╝   ██║   ██████╔╝");
-            System.out.println("╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚═════╝    ╚═╝   ╚═════╝");
-            System.out.println("                                                                               ");
+            System.out.println("\r\n" + //
+                    "·▄▄▄▄  ▄• ▄▌ ▐ ▄  ▄▄ • ▄▄▄ .       ▐ ▄ .▄▄ · \r\n" + //
+                    "██▪ ██ █▪██▌•█▌▐█▐█ ▀ ▪▀▄.▀·▪     •█▌▐█▐█ ▀. \r\n" + //
+                    "▐█· ▐█▌█▌▐█▌▐█▐▐▌▄█ ▀█▄▐▀▀▪▄ ▄█▀▄ ▐█▐▐▌▄▀▀▀█▄\r\n" + //
+                    "██. ██ ▐█▄█▌██▐█▌▐█▄▪▐█▐█▄▄▌▐█▌.▐▌██▐█▌▐█▄▪▐█\r\n" + //
+                    "▀▀▀▀▀•  ▀▀▀ ▀▀ █▪·▀▀▀▀  ▀▀▀  ▀█▄▀▪▀▀ █▪ ▀▀▀▀ \r\n" + //
+                    " ");
+                    System.out.println("\r\n" + //
+                            "▄▄▄ .\r\n" + //
+                            "▀▄.▀·\r\n" + //
+                            "▐▀▀▪▄\r\n" + //
+                            "▐█▄▄▌\r\n" + //
+                            " ▀▀▀ \r\n" + //
+                            "");
+                            System.out.println("\r\n" + //
+                                    "▄▄▌ ▐ ▄▌      • ▌ ▄ ·.  ▄▄▄·  ▐ ▄     .▄▄ · \r\n" + //
+                                    "██· █▌▐█▪     ·██ ▐███▪▐█ ▀█ •█▌▐█    ▐█ ▀. \r\n" + //
+                                    "██▪▐█▐▐▌ ▄█▀▄ ▐█ ▌▐▌▐█·▄█▀▀█ ▐█▐▐▌    ▄▀▀▀█▄\r\n" + //
+                                    "▐█▌██▐█▌▐█▌.▐▌██ ██▌▐█▌▐█ ▪▐▌██▐█▌    ▐█▄▪▐█\r\n" + //
+                                    " ▀▀▀▀ ▀▪ ▀█▄▀▪▀▀  █▪▀▀▀ ▀  ▀ ▀▀ █▪     ▀▀▀▀ \r\n" + //
+                                    "");                                                                            
             System.out.println(" ╔════════════════════════════════════════════════════════════════════════════╗");
             System.out.println(" ║                             DUNGEONS & WOMAN'S                             ║");
             System.out.println(" ║                                                                            ║");
@@ -25,7 +36,7 @@ public class Main {
             System.out.println(" ║ [2] EXIT                                                                   ║");
             System.out.println(" ║                                                                            ║");
             System.out.println(" ╚════════════════════════════════════════════════════════════════════════════╝");
-            System.out.print("Escolha uma opção: ");
+            System.out.print("                                Escolha uma opção: ");
 
             int opcao = scanner.nextInt();
             scanner.nextLine(); // Consumir o newline após o número

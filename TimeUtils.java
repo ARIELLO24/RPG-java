@@ -6,7 +6,7 @@ public class TimeUtils {
             try {
                 System.out.print(mensagem);  // Imprime a mensagem inicial
                 System.out.print(".");        // Adiciona um ponto
-                Thread.sleep(3000);           // Espera 3 segundo
+                Thread.sleep(3000);           // Espera 3 segundos
                 System.out.print("\r");       // Apaga a linha atual no console
             } catch (InterruptedException e) {
                 e.printStackTrace();

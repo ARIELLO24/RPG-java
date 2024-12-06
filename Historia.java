@@ -110,12 +110,22 @@ public class Historia {
                     personagem.usarMagia();
                     monstro.setVida(monstro.getVida() - personagem.getMana());
                     break;
-                case 3:
-                    personagem.fugir();
-                    break;
-                case 4:   
-                personagem.fugir();
-                //modo pacifista hihihihihi
+                    case 3:
+                    int resultadoFuga = dados.rolarDados(scanner, 1, 6); 
+                    System.out.println("Você rolou: " + resultadoFuga);
+                    int valorNecessario = 5;  
+                    if (resultadoFuga >= valorNecessario) {
+                        System.out.println("Você conseguiu fugir com sucesso!");
+                        return;  
+                    } else {
+                        System.out.println("A fuga falhou! Você foi alcançado pelo monstro!");
+                        monstro.atacar();  
+                        personagem.setVida(personagem.getVida() - monstro.getForca());
+                    }
+                    return;
+                case 4:
+              personagem.fugir();
+              // hihihihihihihi
                 return;
                 default:
                     System.out.println("Opção invalida doente");
