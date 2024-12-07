@@ -10,6 +10,4 @@ public class Historia2 {
         this.jogador = jogador;
         /* criar os caminhos e tals */
     }
-
-    public 
 }

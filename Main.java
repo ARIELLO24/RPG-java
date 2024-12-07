@@ -62,13 +62,13 @@ public class Main {
                     Personagem personagem = null;
                     switch (escolhaClasse) {
                         case 1:
-                            personagem = new Guerreiro(nome);
+                            personagem = new Guerreiro(nome, null);
                             break;
                         case 2:
-                            personagem = new Mago(nome);
+                            personagem = new Mago(nome, null);
                             break;
                         case 3:
-                            personagem = new Arqueiro(nome);
+                            personagem = new Arqueiro(nome, null);
                             break;
                         default:
                             System.out.println("Opção inválida!");
