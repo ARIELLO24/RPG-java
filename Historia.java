@@ -105,10 +105,12 @@ public class Historia {
                 case 1:
                     personagem.atacar();
                     monstro.setVida(monstro.getVida() - personagem.getForca());
+                 System.out.println(personagem);
                     break;
                 case 2:
                     personagem.usarMagia();
                     monstro.setVida(monstro.getVida() - personagem.getMana());
+                    System.out.println(personagem);
                     break;
                     case 3:
                     int resultadoFuga = dados.rolarDados(scanner, 1, 6); 
@@ -121,6 +123,7 @@ public class Historia {
                         System.out.println("A fuga falhou! Você foi alcançado pelo monstro!");
                         monstro.atacar();  
                         personagem.setVida(personagem.getVida() - monstro.getForca());
+                        System.out.println(personagem);
                     }
                     return;
                 case 4:
@@ -191,10 +194,12 @@ public class Historia {
                 case 1:
                     personagem.atacar();
                     monstro.setVida(monstro.getVida() - personagem.getForca());
+                    System.out.println(personagem);
                     break;
                 case 2:
                     personagem.usarMagia();
                     monstro.setVida(monstro.getVida() - personagem.getMana());
+                    System.out.println(personagem);
                     break;
                     case 3:
                     // Rolagem de dados para determinar o sucesso da fuga
@@ -209,6 +214,7 @@ public class Historia {
                         System.out.println("A fuga falhou! Você foi alcançado pelo monstro!");
                         monstro.atacar();  // O monstro ataca já que a fuga falhou
                         personagem.setVida(personagem.getVida() - monstro.getForca());
+                        System.out.println(personagem);
                     }
                     break;
                     case 4:

@@ -1,7 +1,6 @@
 public class Mago extends Personagem {
-
-    public Mago(String nome) {
-        super(nome); // Chama o construtor da classe base
+    public Mago(String nome, Caminho caminho) {
+        super(nome, caminho); // Chama o construtor da classe base
     }
 
     @Override

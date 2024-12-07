@@ -7,8 +7,11 @@ public abstract class Personagem {
     protected int agilidade;
     protected int mana;
 
-    public Personagem(String nome) {
+    protected Caminho posicao;
+
+    public Personagem(String nome, Caminho caminho) {
         this.nome = nome;
+        this.posicao = caminho;
         rolarAtributos();
     }
 
@@ -61,6 +64,10 @@ public abstract class Personagem {
 
     public int getMana() {
         return mana;
+    }
+
+    public Caminho getPosicao() {
+        return posicao;
     }
 }
 

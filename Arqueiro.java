@@ -1,7 +1,6 @@
 public class Arqueiro extends Personagem {
-
-    public Arqueiro(String nome) {
-        super(nome); // Chama o construtor da classe base
+    public Arqueiro(String nome, Caminho caminho) {
+        super(nome, caminho); // Chama o construtor da classe base
     }
 
     @Override
