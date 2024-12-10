@@ -3,8 +3,8 @@
 -------
 
 ## Um jogo ruim feito em uma linguagem ruim
-![image](https://github.com/user-attachments/assets/3f8b6aaf-0cb2-444e-93b5-4760d5bc3761)
-![image](https://github.com/user-attachments/assets/dcdbf4db-93bc-4c67-b05a-5fe64b3945cd)
+![image](https://github.com/user-attachments/assets/6fb3804d-cff6-4f9f-a73b-8a4f2ae857a3)
+![image](https://github.com/user-attachments/assets/b63114ec-b296-4064-9349-87b3df52d1b7)
 
 
 ## Ferramentas Utilizadas
