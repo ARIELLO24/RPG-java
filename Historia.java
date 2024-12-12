@@ -47,7 +47,7 @@ Caminho area11 = new Caminho("Entrada do Castelo Sombrio", null, null);
 Caminho area12 = new Caminho("O Fim", "O fim Só", null);
       // Lista de monstros para cada fase
 List<Monstro> monstrosArea2 = new ArrayList<>();
-monstrosArea2.add(new Monstro("Lobo Sombrio", 20, 3));
+monstrosArea2.add(new Monstro("Lobo Sombrio", 20, 10));
 monstrosArea2.add(new Monstro("Felipe DOIDO", 20, 12));
 
 List<Monstro> monstrosArea4 = new ArrayList<>();
@@ -77,8 +77,8 @@ area7.setCaminhos(area9, area10);
 area8.setCaminhos(area9, area6);
 area9.setCaminhos(area10, area11);
 area10.setCaminhos(area11, area12);
-area11.setCaminhos(area12,area10);
-area12.setCaminhos(null,null);
+area11.setCaminhos(area9,area12);
+area12.setCaminhos(area12,null);
 // tenho que melhorar esses caminhos
 
         // Definindo monstros aleatórios nas áreas
@@ -137,7 +137,7 @@ area12.setCaminhos(null,null);
             }
         }
 
-        System.out.println("Você chegou ao final da sua aventura!");
+           System.out.println("Você chegou ao final da sua aventura!");
     }
 
     // Método para sorteio de monstro
@@ -160,6 +160,7 @@ area12.setCaminhos(null,null);
             System.out.println("\nEscolha sua ação:");
             
             // Ações para cada personagem
+            // usado para verificar se um objeto é uma instância de uma classe específica ou implementa uma interface.
             if (personagem instanceof Arqueiro) {
                 System.out.println("1. Atacar com arco");
                 System.out.println("2. Lançar flechas");
