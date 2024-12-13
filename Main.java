@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        boolean running = true;
+        Scanner scanner = new Scanner(System.in); // Scanner para capturar entrada do usuário
+        boolean running = true; // Variável de controle para o loop principal do programa
 
+        // loop principal do programa
         while (running) {
             Utils.limparTela();
             System.out.println("\r\n" + //

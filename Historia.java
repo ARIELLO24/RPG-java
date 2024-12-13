@@ -21,7 +21,7 @@ public class Historia {
         System.out.println("Ela revela que ele é o escolhido para restaurar a glória do reino.");
         System.out.println("Com sua nova sabedoria, Aldric retorna à sua vila, lidera seu povo com justiça e transforma o Reino Esquecido em um lugar próspero.");        
         System.out.println("------------------------------------------------------------");
-        System.out.println("Encontre a sua irmã nesse mundo de Dungeons & WOMAN`S!!!!");
+        System.out.println("       Esse é o mundo de  Dungeons & WOMAN`S!!!!            ");
         System.out.println("------------------------------------------------------------");
         System.out.println("                                                            ");
         System.out.println("Esses são seus status não esqueça deles seu merda:");
@@ -46,6 +46,7 @@ Caminho area10 = new Caminho("Fortaleza do Feiticeiro", "O feiticeiro Vordak pro
 Caminho area11 = new Caminho("Entrada do Castelo Sombrio", null, null);
 Caminho area12 = new Caminho("O Fim", "O fim Só", null);
       // Lista de monstros para cada fase
+      
 List<Monstro> monstrosArea2 = new ArrayList<>();
 monstrosArea2.add(new Monstro("Lobo Sombrio", 20, 10));
 monstrosArea2.add(new Monstro("Felipe DOIDO", 20, 12));
