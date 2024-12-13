@@ -91,10 +91,10 @@ area12.setCaminhos(area12,null);
         // Caminho inicial
         Caminho atual = area1;
 
-        // Começando a aventura dessa merda
-        while (atual != null) {
-            Utils.limparTela();
-            atual.entrar(personagem);
+       // Começando a aventura dessa merda
+        while (atual != null) { // Loop que continua enquanto houver uma área atual
+        Utils.limparTela();
+        atual.entrar(personagem); // Chama o método que representa o jogador entrando na área atual
 
             // Eventos de vida nas áreas sem inimigos
             if (atual == area5) {
@@ -140,14 +140,21 @@ area12.setCaminhos(area12,null);
            System.out.println("Você chegou ao final da sua aventura!");
     }
 
-    // Método para sorteio de monstro
-    private Monstro getMonstroAleatorio(List<Monstro> monstros) {
+       // Método para sorteio de monstro
+       // Recebe uma lista de monstros e retorna um monstro aleatório da lista.
+       private Monstro getMonstroAleatorio(List<Monstro> monstros) {
+    // Verifica se a lista está vazia para evitar erros
         if (monstros.isEmpty()) {
-            return null;
-        }
-        int indice = random.nextInt(monstros.size());
-        return monstros.get(indice);
+        return null; // Retorna null caso não existam monstros na lista
     }
+    
+    // Gera um índice aleatório baseado no tamanho da lista
+    int indice = random.nextInt(monstros.size());
+    
+    // Retorna o monstro correspondente ao índice gerado
+    return monstros.get(indice);
+}
+
 
     private void realizarBatalha(Personagem personagem, Monstro monstro, Scanner scanner) {
         Dados dados = new Dados(); // Instancia a classe de dados
