@@ -12,6 +12,6 @@ public class TimeUtils {
                 e.printStackTrace();
             }
         }
-        System.out.println(" Carregamento concluído!");  // Mostra uma mensagem final
+        System.out.println(" Carregamento concluído!");  
     }
 }
