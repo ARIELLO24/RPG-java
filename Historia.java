@@ -29,58 +29,61 @@ public class Historia {
         System.out.println(personagem);
         System.out.println("                                                            ");
         System.out.println("[            Pressione Enter para continuar                ]");
-        scanner.nextLine();
-        Utils.limparTela();
-
-// Criação das áreas
-Caminho area1 = new Caminho("Entrada de Eldoria", "A majestosa entrada do reino de Eldoria.", null);
-Caminho area2 = new Caminho("Vale dos Ventos Uivantes", "Um vale onde o vento nunca para de sussurrar segredos antigos.", null);
-Caminho area3 = new Caminho("Floresta dos Sussurros", "Árvores antigas sussurram lendas perdidas enquanto você atravessa a floresta.", null);
-Caminho area4 = new Caminho("Túmulo do Herói", "Uma lápide antiga que guarda os restos de um herói lendário.", null);
-Caminho area5 = new Caminho("Cachoeira da Cura", "Uma cachoeira mágica que restaura 10 de vida com suas águas puras.", null);
-Caminho area6 = new Caminho("Desfiladeiro dos Gigantes", "Desfiladeiro traiçoeiro onde gigantes ancestrais andam à noite.", null);
-Caminho area7 = new Caminho("Labirinto das Sombras", "Um labirinto cheio de armadilhas onde sombras espreitam a cada esquina.", null);
-Caminho area8 = new Caminho("Ruínas do Velho Reino", "Ruínas cobertas por musgo e vestígios de batalhas antigas de Eldoria.", null);
-Caminho area9 = new Caminho("Santuário Esquecido", "Um local sagrado onde você recebe +20 de vida.", null);
-Caminho area10 = new Caminho("Fortaleza do Feiticeiro", "O feiticeiro Vordak protege a saída da masmorra com suas magias sombrias.", null);
-Caminho area11 = new Caminho("Entrada do Castelo Sombrio", null, null);
-Caminho area12 = new Caminho("O Fim", "O fim Só", null);
-
-// Lista de monstros para cada fase
-List<Monstro> monstrosArea2 = new ArrayList<>();
-monstrosArea2.add(new Monstro("Lobo Sombrio", 20, 10));
-monstrosArea2.add(new Monstro("Felipe DOIDO", 20, 12));
-
-List<Monstro> monstrosArea4 = new ArrayList<>();
-monstrosArea4.add(new Monstro("Esqueleto Guerreiro", 25, 10));
-monstrosArea4.add(new Monstro("Zumbi Antigo", 30, 12));        
-
-List<Monstro> monstrosArea6 = new ArrayList<>();
-monstrosArea6.add(new Monstro("Orc Furioso", 30, 30)); 
-monstrosArea6.add(new Monstro("Gigante das Montanhas", 25, 8));  
-
-List<Monstro> monstrosArea7 = new ArrayList<>();
-monstrosArea7.add(new Monstro("Dragão Menor", 40, 15));  
-monstrosArea7.add(new Monstro("Garganta Profunda", 35, 12)); 
-
-List<Monstro> monstrosArea12 = new ArrayList<>();
-monstrosArea12.add(new Monstro("Leo Barbosa", 50, 30));
-monstrosArea12.add(new Monstro("Leo o Tirano!!!!", 70, 40));
-
-// Conexão de caminhos picas
-area1.setCaminhos(area2, area3);
-area2.setCaminhos(area4, area5);
-area3.setCaminhos(area5, area6);
-area4.setCaminhos(area7, area8);
-area5.setCaminhos(area6, area9);
-area6.setCaminhos(area8, area7);
-area7.setCaminhos(area9, area10);
-area8.setCaminhos(area9, area6);
-area9.setCaminhos(area10, area11);
-area10.setCaminhos(area11, area12);
-area11.setCaminhos(area9,area12);
-area12.setCaminhos(area12,null);
-// tenho que melhorar esses caminhos
+                scanner.nextLine();
+                Utils.limparTela();
+            
+        // Criação das áreas
+        Caminho area1 = new Caminho("Entrada de Eldoria", "A majestosa entrada do reino de Eldoria.", null);
+        Caminho area2 = new Caminho("Vale dos Ventos Uivantes", "Um vale onde o vento nunca para de sussurrar segredos antigos.", null);
+        Caminho area3 = new Caminho("Floresta dos Sussurros", "Árvores antigas sussurram lendas perdidas enquanto você atravessa a floresta.", null);
+        Caminho area4 = new Caminho("Túmulo do Herói", "Uma lápide antiga que guarda os restos de um herói lendário.", null);
+        Caminho area5 = new Caminho("Cachoeira da Cura", "Uma cachoeira mágica que restaura 10 de vida com suas águas puras.", null);
+        Caminho area6 = new Caminho("Desfiladeiro dos Gigantes", "Desfiladeiro traiçoeiro onde gigantes ancestrais andam à noite.", null);
+        Caminho area7 = new Caminho("Labirinto das Sombras", "Um labirinto cheio de armadilhas onde sombras espreitam a cada esquina.", null);
+        Caminho area8 = new Caminho("Ruínas do Velho Reino", "Ruínas cobertas por musgo e vestígios de batalhas antigas de Eldoria.", null);
+        Caminho area9 = new Caminho("Santuário Esquecido", "Um local sagrado onde você recebe +20 de vida.", null);
+        Caminho area10 = new Caminho("Fortaleza do Feiticeiro", "O feiticeiro Vordak protege a saída da masmorra com suas magias sombrias.", null);
+        Caminho area11 = new Caminho("Entrada do Castelo Sombrio", null, null);
+        Caminho area12 = new Caminho("O Fim", "O fim Só", null);
+            
+        // Lista de monstros para cada fase
+        List<Monstro> monstrosArea2 = new ArrayList<>();
+        monstrosArea2.add(new Monstro("Lobo Sombrio", 20, 10));
+        monstrosArea2.add(new Monstro("Felipe DOIDO", 20, 12));
+            
+        List<Monstro> monstrosArea4 = new ArrayList<>();
+        monstrosArea4.add(new Monstro("Esqueleto Guerreiro", 25, 10));
+        monstrosArea4.add(new Monstro("Zumbi Antigo", 30, 12));        
+            
+        List<Monstro> monstrosArea6 = new ArrayList<>();
+        monstrosArea6.add(new Monstro("Orc Furioso", 30, 30)); 
+        monstrosArea6.add(new Monstro("Gigante das Montanhas", 25, 8));  
+            
+        List<Monstro> monstrosArea7 = new ArrayList<>();
+        monstrosArea7.add(new Monstro("Dragão Menor", 40, 15));  
+        monstrosArea7.add(new Monstro("Garganta Profunda", 35, 12)); 
+            
+        List<Monstro> monstrosArea8 = new ArrayList<>();
+        monstrosArea8.add(new Monstro("Hitler", 69, 45));  
+            
+        List<Monstro> monstrosArea12 = new ArrayList<>();
+        monstrosArea12.add(new Monstro("Leo O Barbosa", 50, 30));
+        monstrosArea12.add(new Monstro("Leo o Tirano!!!!", 70, 40));
+            
+        // Conexão de caminhos picas
+        area1.setCaminhos(area2, area3);
+        area2.setCaminhos(area4, area5);
+        area3.setCaminhos(area5, area6);
+        area4.setCaminhos(area7, area8);
+        area5.setCaminhos(area6, area9);
+        area6.setCaminhos(area8, area7);
+        area7.setCaminhos(area9, area8);
+        area8.setCaminhos(area9, area6);
+        area9.setCaminhos(area10, area11);
+        area10.setCaminhos(area11, area12);
+        area11.setCaminhos(area9,area12);
+        area12.setCaminhos(area12,null);
+        // tenho que melhorar esses caminhos
 
         // Definindo monstros aleatórios nas áreas
         area2.setMonstro(getMonstroAleatorio(monstrosArea2));
