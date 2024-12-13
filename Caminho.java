@@ -9,7 +9,7 @@ public class Caminho {
     private List<Monstro> monstrosPossiveis; // Lista de monstros possíveis para este caminho
     private Monstro monstro; // Monstro que vai aparecer no caminho atual
 
-    // Construtor
+    
     public Caminho(String nome, String descricao, List<Monstro> monstrosPossiveis) {
         this.nome = nome;
         this.descricao = descricao;

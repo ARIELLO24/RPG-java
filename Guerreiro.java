@@ -8,7 +8,7 @@ public class Guerreiro extends Personagem {
         System.out.println(getNome() + " atacou com espada! Força: " + getForca());
     }
 
-    // Função de ataque com pedra (não magia)
+    
     public void atacarComPedra() {
         // Lançando uma pedra com a força do guerreiro
         int danoComPedra = getForca() * 2; // Podemos multiplicar a força para dar um dano mais alto com a pedra

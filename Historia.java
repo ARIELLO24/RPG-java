@@ -32,7 +32,7 @@ public class Historia {
         scanner.nextLine();
         Utils.limparTela();
 
-     // Criação das 10 áreas
+// Criação das áreas
 Caminho area1 = new Caminho("Entrada de Eldoria", "A majestosa entrada do reino de Eldoria.", null);
 Caminho area2 = new Caminho("Vale dos Ventos Uivantes", "Um vale onde o vento nunca para de sussurrar segredos antigos.", null);
 Caminho area3 = new Caminho("Floresta dos Sussurros", "Árvores antigas sussurram lendas perdidas enquanto você atravessa a floresta.", null);
@@ -45,8 +45,8 @@ Caminho area9 = new Caminho("Santuário Esquecido", "Um local sagrado onde você
 Caminho area10 = new Caminho("Fortaleza do Feiticeiro", "O feiticeiro Vordak protege a saída da masmorra com suas magias sombrias.", null);
 Caminho area11 = new Caminho("Entrada do Castelo Sombrio", null, null);
 Caminho area12 = new Caminho("O Fim", "O fim Só", null);
-      // Lista de monstros para cada fase
-      
+
+// Lista de monstros para cada fase
 List<Monstro> monstrosArea2 = new ArrayList<>();
 monstrosArea2.add(new Monstro("Lobo Sombrio", 20, 10));
 monstrosArea2.add(new Monstro("Felipe DOIDO", 20, 12));
@@ -162,7 +162,7 @@ area12.setCaminhos(area12,null);
         System.out.println("Batalha iniciada contra: " + monstro.getNome());
 
         // Exibe o ASCII do monstro
-        System.out.println(AsciiArt.getAsciiMonstro(monstro.getNome()));  // Chama a classe separada
+        System.out.println(AsciiArt.getAsciiMonstro(monstro.getNome()));
 
         while (personagem.getVida() > 0 && monstro.getVida() > 0) {
             System.out.println("\nEscolha sua ação:");
@@ -216,7 +216,7 @@ area12.setCaminhos(area12,null);
                 case 3:
                     // Tentando fugir
                     int resultadoDado = dados.rolarDados(scanner, 1, 10); // Rola um dado d10
-                    if (resultadoDado >= 2) { // Se o resultado for 2 ou mais
+                    if (resultadoDado >= 4) { // Se o resultado for 4 ou mais
                         Utils.limparTela();
                         System.out.println("Você conseguiu fugir da batalha!");
                         return;
