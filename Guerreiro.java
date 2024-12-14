@@ -11,7 +11,7 @@ public class Guerreiro extends Personagem {
     
     public void atacarComPedra() {
         // Lançando uma pedra com a força do guerreiro
-        int danoComPedra = getForca() * 2; // Podemos multiplicar a força para dar um dano mais alto com a pedra
+        int danoComPedra = getForca() * 2; // dano multiplicado
         System.out.println(getNome() + " lançou uma pedra com força! Dano: " + danoComPedra);
     }
 
@@ -19,7 +19,7 @@ public class Guerreiro extends Personagem {
     public void usarMagia() {
         // Não tem magia, mas o Guerreiro lança uma pedra
         System.out.println(getNome() + " não usa magia, mas com sua força, lança uma pedra!");
-        atacarComPedra();  // Chamando o método de atacar com pedra
+        atacarComPedra();  
     }
 
     @Override
@@ -32,3 +32,4 @@ public class Guerreiro extends Personagem {
         return super.toString() + "\nClasse: Guerreiro";
     }
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////

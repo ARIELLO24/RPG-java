@@ -1,6 +1,4 @@
 public class AsciiArt {
-
-    // Método para retornar o ASCII Art do monstro com base no nome
     public static String getAsciiMonstro(String nome) {
         switch (nome) {
             case "Lobo Sombrio":
@@ -337,3 +335,4 @@ public class AsciiArt {
         }
     }
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

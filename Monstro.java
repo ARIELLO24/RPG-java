@@ -34,7 +34,7 @@ public class Monstro {
 
         // Chance de crítico (20% de chance)
         if (random.nextInt(100) < 20) {
-            dano *= 2;  // Dano dobrado no crítico
+            dano *= 2;  // dobra o dano
             System.out.println(nome + " fez um ataque crítico!");
         }
 
@@ -42,10 +42,11 @@ public class Monstro {
         System.out.println(nome + " atacou com força de " + forca + " causando " + dano + " de dano!");
     }
 
-    // Método para gerar monstro aleatório
+    // Método para mostro aleatorio
     public static Monstro gerarMonstroAleatorio(List<Monstro> monstros) {
         Random random = new Random();
         int indice = random.nextInt(monstros.size());
         return monstros.get(indice);
     }
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

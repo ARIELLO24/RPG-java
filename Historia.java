@@ -31,7 +31,7 @@ public class Historia {
         System.out.println("[            Pressione Enter para continuar                ]");
                 scanner.nextLine();
                 Utils.limparTela();
-            
+
         // Criação das áreas
         Caminho area1 = new Caminho("Entrada de Eldoria", "A majestosa entrada do reino de Eldoria.", null);
         Caminho area2 = new Caminho("Vale dos Ventos Uivantes", "Um vale onde o vento nunca para de sussurrar segredos antigos.", null);
@@ -45,31 +45,31 @@ public class Historia {
         Caminho area10 = new Caminho("Fortaleza do Feiticeiro", "O feiticeiro Vordak protege a saída da masmorra com suas magias sombrias.", null);
         Caminho area11 = new Caminho("Entrada do Castelo Sombrio", null, null);
         Caminho area12 = new Caminho("O Fim", "O fim Só", null);
-            
+
         // Lista de monstros para cada fase
         List<Monstro> monstrosArea2 = new ArrayList<>();
         monstrosArea2.add(new Monstro("Lobo Sombrio", 20, 10));
         monstrosArea2.add(new Monstro("Felipe DOIDO", 20, 12));
-            
+
         List<Monstro> monstrosArea4 = new ArrayList<>();
         monstrosArea4.add(new Monstro("Esqueleto Guerreiro", 25, 10));
         monstrosArea4.add(new Monstro("Zumbi Antigo", 30, 12));        
-            
+
         List<Monstro> monstrosArea6 = new ArrayList<>();
         monstrosArea6.add(new Monstro("Orc Furioso", 30, 30)); 
         monstrosArea6.add(new Monstro("Gigante das Montanhas", 25, 8));  
-            
+
         List<Monstro> monstrosArea7 = new ArrayList<>();
         monstrosArea7.add(new Monstro("Dragão Menor", 40, 15));  
         monstrosArea7.add(new Monstro("Garganta Profunda", 35, 12)); 
-            
+
         List<Monstro> monstrosArea8 = new ArrayList<>();
         monstrosArea8.add(new Monstro("Hitler", 69, 45));  
-            
+
         List<Monstro> monstrosArea12 = new ArrayList<>();
         monstrosArea12.add(new Monstro("Leo O Barbosa", 50, 30));
         monstrosArea12.add(new Monstro("Leo o Tirano!!!!", 70, 40));
-            
+
         // Conexão de caminhos picas
         area1.setCaminhos(area2, area3);
         area2.setCaminhos(area4, area5);
@@ -164,10 +164,10 @@ public class Historia {
         Dados dados = new Dados(); // Instancia a classe de dados
         System.out.println("Batalha iniciada contra: " + monstro.getNome());
 
-        // Exibe o ASCII do monstro
-        System.out.println(AsciiArt.getAsciiMonstro(monstro.getNome()));
-
+        
         while (personagem.getVida() > 0 && monstro.getVida() > 0) {
+            // Exibe o ASCII do monstro
+            System.out.println(AsciiArt.getAsciiMonstro(monstro.getNome()));
             System.out.println("\nEscolha sua ação:");
             
             // Ações para cada personagem
@@ -198,6 +198,7 @@ public class Historia {
                     } else if (personagem instanceof Mago) {
                         monstro.setVida(monstro.getVida() - personagem.getForca()); // Atacar com feitiço
                     }
+                    //Mostra vida do monstro. Trocar pro menu
                     System.out.println("Você atacou! Vida do monstro: " + monstro.getVida());
                     break;
                 case 2:
@@ -236,6 +237,7 @@ public class Historia {
 
             if (monstro.getVida() > 0) {
                 personagem.setVida(personagem.getVida() - monstro.getForca());
+                //Mostra a vida do monstro. Trocar pro menu.
                 System.out.println("O monstro atacou! Sua vida: " + personagem.getVida());
             }
         }
@@ -247,3 +249,5 @@ public class Historia {
         }
     }
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////

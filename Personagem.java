@@ -41,7 +41,7 @@ public abstract class Personagem {
                "\nMana: " + mana;
     }
 
-    // Métodos de acesso
+    // Métodos de acesso 😊😊
     public String getNome() {
         return nome;
     }

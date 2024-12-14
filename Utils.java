@@ -1,7 +1,6 @@
 import java.io.IOException;
 
 public class Utils {
-    // Função para limpar a tela
 
     private static int compareVersion(String v1, String v2) {
         String[] v1Parts = v1.split("\\.");
@@ -15,7 +14,7 @@ public class Utils {
         }
         return 0;
     }
-    /////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////
     public static void limparTela() {
         try {
             // Se o sistema for Windows
@@ -32,3 +31,4 @@ public class Utils {
         }
     }
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -17,7 +17,7 @@ public class Arqueiro extends Personagem {
             System.out.println(getNome() + " atirou várias flechas em direção ao inimigo!");
         } else if (contagemAtaques == 3) {
             System.out.println(getNome() + " fugiu rapidamente com sua agilidade!");
-            contagemAtaques = 0;  // Reseta a contagem para o próximo ciclo
+            contagemAtaques = 0;  // Reseta a contagem
         }
     }
 
@@ -36,3 +36,4 @@ public class Arqueiro extends Personagem {
         return super.toString() + "\nClasse: Arqueiro";
     }
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////

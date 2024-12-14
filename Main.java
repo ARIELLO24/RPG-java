@@ -39,7 +39,7 @@ public class Main {
             System.out.print("                               Escolha uma opção:");
 
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Consumir o newline após o número
+            scanner.nextLine(); 
             TimeUtils.mostrarCarregamento("Carregando", opcao);
 
             switch (opcao) {
@@ -47,7 +47,7 @@ public class Main {
                     Utils.limparTela();
                     System.out.println("\n[INICIANDO A LADAIA]\n");
 
-                    // Pergunta ao jogador o nome do personagem
+                    
                     System.out.print("Qual o nome do seu personagem? ");
                     String nome = scanner.nextLine();
 
@@ -93,5 +93,5 @@ public class Main {
         scanner.close();
     }
 }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Quero muie
